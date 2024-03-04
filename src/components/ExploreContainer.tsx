@@ -1,4 +1,6 @@
 import './ExploreContainer.css';
+import React from 'react';
+import { IonButton } from '@ionic/react';
 
 interface ContainerProps {
   name: string;
@@ -6,10 +8,12 @@ interface ContainerProps {
 
 const ExploreContainer: React.FC<ContainerProps> = ({ name }) => {
   return (
-    <div className="container">
-      <strong>{name}</strong>
-      <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-    </div>
+      <>
+          <IonButton>Default</IonButton>
+          <IonButton fill="clear">Clear</IonButton>
+          <IonButton fill="outline">Outline</IonButton>
+          <IonButton fill="solid">Solid</IonButton>
+      </>
   );
 };
 

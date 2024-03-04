@@ -2,6 +2,8 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 
+import Card from "../components/Card";
+
 const Tab1: React.FC = () => {
   return (
     <IonPage>
@@ -17,6 +19,7 @@ const Tab1: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <ExploreContainer name="Tab 1 page" />
+          <Card></Card>
       </IonContent>
     </IonPage>
   );
